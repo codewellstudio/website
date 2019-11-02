@@ -8,7 +8,7 @@ import "./index.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Code well studio" />
+    <SEO title="Code Well Studio" />
     <section id="welcome">
       <Fade bottom cascade>
         <div>
