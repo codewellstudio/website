@@ -1,7 +1,9 @@
 section {
+    position: relative;
     /* margin: 3.4rem 0 -3.4rem 0; */
     padding: 160px 0;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     text-align: center;
     color: rgb(18, 36, 49);
 }
@@ -20,6 +22,10 @@ section h3 {
     /* color: rgb(15, 6, 73); */
 }
 
+section b {
+    font-weight: 500;
+}
+
 section .subsection-center {
     text-align: center;
 }
@@ -36,9 +42,38 @@ section .top-spacing {
     margin-top: 2rem;
 }
 
+section .top-spacing-6 {
+    margin-top: 6rem;
+}
+
 section p {
+    display: inline-block;
     width: 75%;
     font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
     font-weight: 200;
 }
 
+section .project {
+    position: relative;
+}
+
+section .project p {
+    z-index: 1;
+    position: relative;
+    padding: 0.5rem;
+    font-weight: 100;
+    background: white;
+    box-shadow: 0 0 16px -8px #000;
+}
+
+section .project img {
+    position: absolute;
+    width: 60%;
+    top: -40px;
+    right: 0;
+}
+
+section .subsection-right .project img {
+    right: unset;
+    left: 0;
+}

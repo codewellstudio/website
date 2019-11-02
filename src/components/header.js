@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
       height: `60px`,
       background: `white`,
       fontFamily: `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`,
-      boxShadow: `0 -4px 6px #000`,
+      boxShadow: `0 -4px 7px #000`,
     }}
   >
     {/* <div style={{ maxWidth: `200px` }}>
@@ -61,13 +61,13 @@ const Header = ({ siteTitle }) => (
         How we do it
       </span>
       <span
-        onClick={() => handleAnchorLink('#section3')}
+        onClick={() => handleAnchorLink('#our-work')}
         style={{
           textDecoration: `none`,
           cursor: `pointer`,
         }}
       >
-        Section 3
+        Our work
       </span>
       <span
         onClick={() => handleAnchorLink('#section4')}
