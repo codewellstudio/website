@@ -1,9 +1,11 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import scrollToElement from "scroll-to-element"
 
-import Logo from "./logo"
+import "./header.css"
+// import Logo from "./logo"
+import logoImg from "../images/logo.png"
 
 const handleAnchorLink = (hash) => {
   scrollToElement(hash, {
@@ -18,6 +20,8 @@ const Header = ({ siteTitle }) => (
       zIndex: 1,
       position: `fixed`,
       top: `0`,
+      display: `flex`,
+      alignItems: `center`,
       width: `100%`,
       height: `60px`,
       background: `white`,
@@ -25,13 +29,24 @@ const Header = ({ siteTitle }) => (
       boxShadow: `0 -4px 7px #000`,
     }}
   >
-    {/* <div style={{ maxWidth: `200px` }}>
-      <Logo />
-    </div> */}
+    <div style={{ flexGrow: 1 }}>
+      <div
+        // onClick={() => handleAnchorLink('/#welcome')}
+        onClick={() => window.location.replace('/')}
+        style={{ maxWidth: `200px`, cursor: `pointer` }}
+      >
+        {/* <Logo /> */}
+        <img
+          src={logoImg}
+          alt="Code Well Studio - Logo"
+          style={{ marginBottom: `-5px` }}
+        />
+      </div>
+    </div>
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        // margin: `0 auto`,
+        // maxWidth: 960,
         height: `60px`,
         display: `flex`,
         alignItems: `center`,
@@ -43,40 +58,28 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <span
+        className="header-link"
         onClick={() => handleAnchorLink('#what-we-do')}
-        style={{
-          textDecoration: `none`,
-          cursor: `pointer`,
-        }}
       >
         What we do
       </span>
       <span
+        className="header-link"
         onClick={() => handleAnchorLink('#how-we-do-it')}
-        style={{
-          textDecoration: `none`,
-          cursor: `pointer`,
-        }}
       >
         How we do it
       </span>
       <span
+        className="header-link"
         onClick={() => handleAnchorLink('#our-work')}
-        style={{
-          textDecoration: `none`,
-          cursor: `pointer`,
-        }}
       >
         Our work
       </span>
       <span
-        onClick={() => handleAnchorLink('#section4')}
-        style={{
-          textDecoration: `none`,
-          cursor: `pointer`,
-        }}
+        className="header-link last"
+        onClick={() => handleAnchorLink('#get-in-touch')}
       >
-        Section 4
+        Get in touch
       </span>
     </div>
   </header>

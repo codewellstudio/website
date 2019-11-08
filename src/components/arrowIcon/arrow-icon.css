@@ -1,0 +1,21 @@
+.arrow-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+    height: 6rem;
+    color: rgba(18, 36, 49, 1);
+    opacity: 0;
+    transition: opacity ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.arrow-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.arrow-icon:hover {
+    opacity: 0.7;
+}

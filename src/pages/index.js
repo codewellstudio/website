@@ -1,21 +1,26 @@
 import React from "react"
-import Fade from 'react-reveal/Fade';
+import { Link } from "gatsby"
+import Fade from 'react-reveal/Fade'
 
 import Layout from "../components/layout"
+// import ArrowIcon from "../components/arrowIcon/arrow-icon"
+import ArrowIconFixed from "../components/arrowIconFixed/arrow-icon-fixed"
 import SEO from "../components/seo"
 
 import "./index.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Code Well Studio" />
+    <SEO title="Web development" />
     <section id="welcome">
       <Fade bottom cascade>
         <div>
           <h1>Building successful and profitable products is difficult. We make it simple.</h1>
-          <h3>Whether you're a Fortune 500 or a startup in stealth mode - we provide our clients the creative, technical and business expertise they need to succeed.</h3>
+          <h3>Whether you're an early stage startup or an established company - we provide our clients technical and business expertise they need to succeed.</h3>
         </div>
       </Fade>
+      {/* <ArrowIcon linkPath="#what-we-do" /> */}
+      {/* <div className="parallax-element"></div> */}
     </section>
     <section id="what-we-do">
       <Fade bottom cascade>
@@ -28,6 +33,7 @@ const IndexPage = () => (
           </div>
         </div>
       </Fade>
+      {/* <ArrowIcon linkPath="#how-we-do-it" /> */}
     </section>
     <section id="how-we-do-it">
       <Fade bottom cascade>
@@ -47,13 +53,14 @@ const IndexPage = () => (
           </div>
         </div>
       </Fade>
+      {/* <ArrowIcon linkPath="#our-work" /> */}
     </section>
     <section id="our-work">
       <Fade bottom cascade>
         <div className="subsection-left">
           <h1>Our work</h1>
           <div className="project">
-            <h3>Movieo</h3>
+            <h3><Link to="/movieo-case-study">Movieo</Link></h3>
             <p>
               We love movies, but finding great ones to watch is usually a hassle. We had been searching for a simple and well-designed movie-browsing interface, yet we couldn't find one. Therefore, we decided to create one ourselves.
             </p>
@@ -61,7 +68,7 @@ const IndexPage = () => (
           </div>
           <div className="subsection-right top-spacing-6">
             <div className="project">
-              <h3>Credit Karma - Marketplace</h3>
+            <h3><Link to="/marketplace-case-study">Credit Karma - Marketplace</Link></h3>
               <p>
                 Credit Karma is an $4 billion personal finance startup with over 88 million members . It offers free credit score reports, credit cards, personal loans shopping, tax filing and other financial products.
               </p>
@@ -70,13 +77,16 @@ const IndexPage = () => (
           </div>
         </div>
       </Fade>
+      {/* <ArrowIcon linkPath="#get-in-touch" /> */}
     </section>
-    <section id="section4">
+    <section id="get-in-touch">
       <Fade bottom>
-        <h1>Hi, I'm Jane Doe</h1>
-        <h3>I'm creating noice web experiences for the next generation of consumer-facing companies</h3>
+        <h1>Get in touch</h1>
+        <h3>Tell us more about your project and send us an email at <b>sinisa@codewellstudio.com</b></h3>
       </Fade>
+      {/* <ArrowIcon isUp={true} linkPath="#welcome" /> */}
     </section>
+    <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} />
   </Layout>
 )
 

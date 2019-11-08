@@ -1,0 +1,20 @@
+.header-link {
+    margin-right: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-link.last {
+    padding: 0 1rem;
+    font-weight: 300;  
+    border: 2px solid rgba(18, 36, 49, 1);
+    border-radius: 2px;      
+}
+
+.header-link:hover {
+    color: rgba(18, 36, 49, .7);
+}
+
+.header-link.last:hover {
+    border: 2px solid rgba(18, 36, 49, .7);
+}

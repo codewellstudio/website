@@ -11,7 +11,7 @@ section {
 section h1 {
     margin-bottom: 4rem;
     font-weight: 800;
-    /* color: rgb(18, 36, 49); */
+    color: rgb(18, 36, 49);
     /* color: rgb(54, 41, 60); */
 }
 
@@ -19,11 +19,13 @@ section h3 {
     display: inline-block;
     width: 75%;
     font-weight: 200;
+    color: rgb(18, 36, 49);
     /* color: rgb(15, 6, 73); */
 }
 
 section b {
     font-weight: 500;
+    color: rgb(18, 36, 49);
 }
 
 section .subsection-center {
@@ -51,6 +53,7 @@ section p {
     width: 75%;
     font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
     font-weight: 200;
+    color: rgb(18, 36, 49);
 }
 
 section .project {
@@ -63,6 +66,7 @@ section .project p {
     padding: 0.5rem;
     font-weight: 100;
     background: white;
+    color: rgb(18, 36, 49);
     box-shadow: 0 0 16px -8px #000;
 }
 
@@ -76,4 +80,22 @@ section .project img {
 section .subsection-right .project img {
     right: unset;
     left: 0;
+}
+
+@keyframes translate-up-down {
+    0%   {top: 0px;}
+    50%  {top: 150px;}
+    100% {top: 0px;}
+  }
+
+.parallax-element {
+    margin-top: 100px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    width: 100px;
+    height: 100px;
+    background: rgb(18, 36, 49);
+    position: relative;
+
+    transition: all 24s ease-in-out;
+    animation: translate-up-down 24s infinite;
 }
