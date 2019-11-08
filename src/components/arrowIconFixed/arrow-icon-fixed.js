@@ -6,12 +6,12 @@ import "./arrow-icon-fixed.css"
 
 const ArrowIconFixed = ({ anchors }) => {
   const [lastSection, onLastSectionMark] = useState(false);
-  const windowInnerHeight = window ? window.innerHeight : 0;
+  const windowInnerHeight = window !== undefined ? window.innerHeight : 0;
   const lastSectionAnchor = (anchors.length - 2) * windowInnerHeight;
 
   const onScrollDown = ({ anchors }) => {
-    const windowInnerHeight = window ? window.innerHeight : 0;
-    const windowScrollY = window ? window.scrollY : 0;
+    const windowInnerHeight = window !== undefined ? window.innerHeight : 0;
+    const windowScrollY = window !== undefined ? window.scrollY : 0;
 
     if (windowScrollY > lastSectionAnchor) {
       onLastSectionMark(true)
