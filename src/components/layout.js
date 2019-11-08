@@ -30,13 +30,18 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
+          padding: `0 0.5rem`,
           // padding: `0px 1.0875rem 1.45rem`,
           // paddingTop: 0,
         }}
       >
         <main>{children}</main>
-        <footer>
-
+        <footer style={{
+          textAlign: 'center',
+          fontSize: '0.75rem',
+          color: `rgb(18, 36, 49)`,
+        }}>
+          © Code Well Studio Ltd 2019
         </footer>
       </div>
     </>

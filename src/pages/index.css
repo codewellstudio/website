@@ -1,6 +1,5 @@
 section {
     position: relative;
-    /* margin: 3.4rem 0 -3.4rem 0; */
     padding: 160px 0;
     min-height: 100vh;
     height: 100%;
@@ -12,7 +11,6 @@ section h1 {
     margin-bottom: 4rem;
     font-weight: 800;
     color: rgb(18, 36, 49);
-    /* color: rgb(54, 41, 60); */
 }
 
 section h3 {
@@ -20,7 +18,6 @@ section h3 {
     width: 75%;
     font-weight: 200;
     color: rgb(18, 36, 49);
-    /* color: rgb(15, 6, 73); */
 }
 
 section b {
@@ -58,28 +55,81 @@ section p {
 
 section .project {
     position: relative;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    border-radius: 4px;
 }
 
-section .project p {
-    z-index: 1;
-    position: relative;
-    padding: 0.5rem;
-    font-weight: 100;
-    background: white;
+@media(max-width: 768px) {
+    section .project {
+        margin: 0;
+    }
+}
+
+section .project.movieo {
+    background: -webkit-radial-gradient(center, ellipse cover, #202b3d, #141b26 100%);
+}
+
+section .project.ck-marketplace {
+    background: -webkit-radial-gradient(center, ellipse cover, #3ddb94, #25ca7f 100%);
+}
+
+section .project .project-description {
+    padding-bottom: 1rem;
+    font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
+    text-align: center;
+}
+
+section .project h3 {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+}
+
+section .project a {
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    right: 25%;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    background: rgba(255, 255, 255, 0.75);
     color: rgb(18, 36, 49);
-    box-shadow: 0 0 16px -8px #000;
+    border: 1px solid rgb(18, 36, 49);
+    border-radius: 3px;
+}
+
+section .project.project.ck-marketplace a {
+    /* background: rgba(61, 219, 148, 0.7); */
+    border: 1px solid rgba(61, 219, 148, 0.7);
+    color: rgb(18, 36, 49);
+}
+
+section .project a:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+section .project.project.ck-marketplace a:hover {
+    border: 1px solid rgba(61, 219, 148, 1);
+}
+
+section .project-img-wrapper {
+    text-align: center;
 }
 
 section .project img {
-    position: absolute;
-    width: 60%;
-    top: -40px;
-    right: 0;
+    margin: 0;
+    width: 75%;
 }
 
-section .subsection-right .project img {
-    right: unset;
-    left: 0;
+section .project p {
+    width: 100%;
+    padding: 0;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 1);
 }
 
 @keyframes translate-up-down {

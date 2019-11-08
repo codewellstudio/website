@@ -1,3 +1,45 @@
+.header-link-wrapper {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(18, 36, 49);
+    font-size: 0.85028rem;
+    font-weight: 200;
+}
+
+.header-link-wrapper-mobile {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background: white;
+    text-align: center;
+}
+
+.header-link-wrapper-mobile span {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.header-link-wrapper-mobile-toggle {
+    display: none;
+    position: relative;
+    right: 0.5rem;
+    color: rgb(18, 36, 49);
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .header-link-wrapper {
+        display: none;
+    }
+
+    .header-link-wrapper-mobile-toggle {
+        display: block;
+    }
+}
+
 .header-link {
     margin-right: 1rem;
     text-decoration: none;

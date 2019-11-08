@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Code Well Studio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Proven web development studio with over 7 years of experience in the industry. We help early stage startups and established companies deliver their products so they can gain interest from investors, bring value to their users and meet their business goals.`,
+    author: `Sinisa Mikulic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,5 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  pathPrefix: "/website",
+  pathPrefix: "/",
 }
