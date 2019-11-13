@@ -1,6 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
-import { FaChevronRight } from 'react-icons/fa'
+import { Link } from "gatsby"
+import { FaChevronRight, FaRegArrowAltCircleLeft } from 'react-icons/fa'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,7 +13,9 @@ const CreditKarmaCaseStudy = () => (
     <br />
     <br />
     <br />
-    <h1>
+    <div className="case-study">
+    <Link className="link-go-back" to="/"><FaRegArrowAltCircleLeft /></Link>
+    <h1 className="case-study--title">
       Credit Karma Marketplace
       <a className="link-external-website" target="blank" href="https://www.creditkarma.com/">Visit website <FaChevronRight /></a>
     </h1>
@@ -43,6 +45,7 @@ const CreditKarmaCaseStudy = () => (
       src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1561386039702-ALLWPQBQW3QDA8HEG70W/ke17ZwdGBToddI8pDm48kIUjAMMHKfg61v0ypuYqCB5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwDvyONvR00ei0WKJJSDPomh1i4bqL9i9daWep_1Vrqe9LDYwooGyuNgRf5c7stUqs/Screen+Shot+2019-06-24+at+16.18.43.png?format=750w"
     />
     <h2>Marketplace ended up as a successful experiment where <b>all our engineering effort was done with quality and in time</b>, regardless of the team being quickly put together and due to difficult nature of the product!</h2>
+    </div>
   </Layout>
 )
 

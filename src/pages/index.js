@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Fade from 'react-reveal/Fade'
+import scrollToElement from "scroll-to-element"
+import { FaRegCircle } from 'react-icons/fa'
 
 import Layout from "../components/layout"
 // import ArrowIcon from "../components/arrowIcon/arrow-icon"
-import ArrowIconFixed from "../components/arrowIconFixed/arrow-icon-fixed"
+// import ArrowIconFixed from "../components/arrowIconFixed/arrow-icon-fixed"
 import SEO from "../components/seo"
 
 import "./index.css"
@@ -17,6 +19,13 @@ const IndexPage = () => (
         <div>
           <h1>Building successful and profitable products is difficult. We make it simple.</h1>
           <h3>Whether you're an early stage startup or an established company - we provide our clients technical and business expertise they need to succeed.</h3>
+          <br />
+          <div
+            className="hero-button"
+            onClick={() => scrollToElement('#our-work', { align: 'top', duration: 1000 })}
+          >
+            See our work
+          </div>
         </div>
       </Fade>
     </section>
@@ -30,24 +39,34 @@ const IndexPage = () => (
             <h3>› ensure effective and transparent communication that keeps everyone on the same page</h3>
             <h3>› focus on achieving client’s business goals and bringing value</h3>
           </div>
+          <div className="subsection-right top-spacing">
+            <h2>We cover a wide range of skills</h2>
+            <h3 className="subsection-text">
+              We are experts in <b>user experience development</b>, <b>performance optimization</b>, and <b>frontend architecture design</b>. 
+              Besides our speciality, we can also help you with user research, product development, development process optimization, and much more.
+            </h3>
+          </div>
         </div>
       </Fade>
     </section>
     <section id="how-we-do-it">
       <Fade bottom cascade>
         <div className="subsection-right">
-          <h1>How we do it?</h1>
+          <h1>Why us?</h1>
           <h3>
             Most projects end up with similar problems. 
             Application <b>performance</b>, development <b>process</b>, product <b>delivery speed</b> and customer <b>happiness</b>. 
             Our technical solution always provides the best balance of those key ingredients and maximizes your chance of success.
           </h3>
           <div className="subsection-left top-spacing">
-            <h2>We cover a wide range of skills</h2>
-            <h3>
-              We are experts in user experience development, performance optimization, and frontend architecture design. 
-              Besides our speciality, we can also help you with user research, product development, development process optimization, and much more.
-            </h3>
+            <div className="why-us-questions">
+              <h2>If you recognize yourself in some of these questions, <a href="#get-in-touch">contact us</a>.</h2>
+              <h3><FaRegCircle />Need your C-Level technology lead?
+              <br /><FaRegCircle />Need a technology review or overhaul?
+              <br /><FaRegCircle />Need workflow and process optimization?
+              <br /><FaRegCircle />Need a strategy to move forward?
+              </h3>
+            </div>
           </div>
         </div>
       </Fade>
@@ -89,7 +108,7 @@ const IndexPage = () => (
         <h3>Tell us more about your project and send us an email at <b>sinisa@codewellstudio.com</b></h3>
       </Fade>
     </section>
-    <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} />
+    {/* <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} /> */}
   </Layout>
 )
 

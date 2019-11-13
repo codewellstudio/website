@@ -22,7 +22,6 @@ const Header = ({ siteTitle }) => {
   const [mobileMenuOn, toggleMobileMenu] = useState(false);
 
   const toggleMenu = () => {
-    console.log(mobileMenuOn)
     toggleMobileMenu(!mobileMenuOn)
   }
 
@@ -45,12 +44,12 @@ const Header = ({ siteTitle }) => {
         <div
           // onClick={() => handleAnchorLink('/#welcome')}
           onClick={() => window.location.replace('/')}
-          style={{ maxWidth: `200px`, cursor: `pointer` }}
+          style={{ maxWidth: `214px`, cursor: `pointer`, marginLeft: `1rem` }}
         >
           <img
             src={logoImg}
             alt="Code Well Studio - Logo"
-            style={{ marginBottom: `-5px` }}
+            style={{ marginBottom: `-7px` }}
           />
         </div>
       </div>
@@ -65,7 +64,7 @@ const Header = ({ siteTitle }) => {
           className="header-link"
           onClick={() => handleAnchorLink('#how-we-do-it')}
         >
-          How we do it
+          Why us?
         </span>
         <span
           className="header-link"

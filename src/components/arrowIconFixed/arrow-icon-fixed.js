@@ -43,19 +43,13 @@ const ArrowIconFixed = ({ anchors }) => {
   return (
     <React.Fragment>
     {!lastSection && (
-      <div
-        onClick={() => onScrollDown({ anchors })} 
-        className="arrow-icon-fixed"
-      >
-        <FaChevronDown />
+      <div className="arrow-icon-fixed">
+        <FaChevronDown onClick={() => onScrollDown({ anchors })}  />
       </div>
     )}
     {lastSection && (
-      <div
-        onClick={() => onScrollUp()} 
-        className="arrow-icon-fixed"
-      >
-        <FaChevronUp />
+      <div className="arrow-icon-fixed">
+        <FaChevronUp onClick={() => onScrollUp()}  />
       </div>
     )}
     </React.Fragment>

@@ -1,6 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
-import { FaChevronRight } from 'react-icons/fa'
+import { Link } from "gatsby"
+import { FaChevronRight, FaRegArrowAltCircleLeft } from 'react-icons/fa'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,7 +13,9 @@ const MovieoCaseStudy = () => (
     <br />
     <br />
     <br />
-    <h1>
+    <div className="case-study">
+    <Link className="link-go-back" to="/"><FaRegArrowAltCircleLeft /></Link>
+    <h1 className="case-study--title">
       Movieo
       <a className="link-external-website" target="blank" href="https://movieo.me/">Visit website <FaChevronRight /></a>
     </h1>
@@ -37,7 +39,8 @@ const MovieoCaseStudy = () => (
     <p>We used Movieo as a platform for experimenting with different technologies, analytics setups, onboarding and conversion tactics, and more. Movieo gave us the opportunity to talk with other businesses and marketing agencies and learn about product monetization. Needing to wear many hats such as developing the product, creating social media campaigns and improving user retention provided valuable insight while working alongside friends made the experience simply amazing. </p>
     <p>We stopped working on it after a while, but the servers are still running and we still have many returning users. The automated scripts keep movies up to date.</p>
     <p>Today, in 2019, <b>Movieo is used by more than 100,000 people every month</b>. Even though we haven’t promoted it in over two years now, the numbers are still slowly but steadily rising.</p>
-  </Layout>
+    </div>
+ </Layout>
 )
 
 export default MovieoCaseStudy

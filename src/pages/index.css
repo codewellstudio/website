@@ -1,3 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css?family=Oswald|Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Poppins:200,300,400,500,600,700,800&display=swap');
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
 section {
     position: relative;
     padding: 160px 0;
@@ -7,22 +15,69 @@ section {
     color: rgb(18, 36, 49);
 }
 
+section a {
+    color: rgb(18, 36, 49);
+}
+
 section h1 {
     margin-bottom: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
     font-weight: 800;
     color: rgb(18, 36, 49);
+}
+
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 section h3 {
     display: inline-block;
     width: 75%;
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: rgb(18, 36, 49);
+}
+
+section .subsection-text {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+}
+
+section .why-us-questions h2,
+section .why-us-questions h3 {
+    line-height: 1.2;
+    font-family: 'Oswald', sans-serif;
+}
+
+section .why-us-questions svg {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+    position: relative;
+    top: 0.1rem;
 }
 
 section b {
     font-weight: 500;
     color: rgb(18, 36, 49);
+}
+
+section .hero-button {
+    display: inline-block;
+    margin-top: 2.65rem;
+    padding: 0.5rem 0;
+    width: 8rem;
+    background: rgb(18, 36, 49);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .25s ease-in-out;
+}
+
+section .hero-button:hover {
+    background: #fb5a5a;
 }
 
 section .subsection-center {
@@ -48,7 +103,7 @@ section .top-spacing-6 {
 section p {
     display: inline-block;
     width: 75%;
-    font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: rgb(18, 36, 49);
 }
@@ -78,7 +133,6 @@ section .project.ck-marketplace {
 
 section .project .project-description {
     padding-bottom: 1rem;
-    font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif';
     text-align: center;
 }
 
@@ -125,10 +179,15 @@ section .project img {
     width: 75%;
 }
 
+section .project h3 {
+    font-weight: 300;
+}
+
 section .project p {
     width: 100%;
     padding: 0;
-    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -136,7 +195,13 @@ section .project p {
     0%   {top: 0px;}
     50%  {top: 150px;}
     100% {top: 0px;}
-  }
+}
+
+@keyframes letter-stretch {
+    0%   {letter-spacing: 1px;}
+    50%  {letter-spacing: 10px;}
+    100% {letter-spacing: 10px;}
+}
 
 .parallax-element {
     margin-top: 100px;
@@ -148,4 +213,9 @@ section .project p {
 
     transition: all 24s ease-in-out;
     animation: translate-up-down 24s infinite;
+}
+
+.animate-stretch {
+    transition: all 2s ease-in-out;
+    animation: letter-stretch 2s infinite;
 }
