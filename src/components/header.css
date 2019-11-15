@@ -5,7 +5,7 @@
     justify-content: space-between;
     color: rgb(18, 36, 49);
     font-size: 0.85028rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .header-link-wrapper-mobile {
@@ -13,6 +13,7 @@
     position: absolute;
     top: 60px;
     background: white;
+    border-bottom: 1px solid #efefef;
     text-align: center;
 }
 
@@ -25,7 +26,7 @@
 .header-link-wrapper-mobile-toggle {
     display: none;
     position: relative;
-    right: 0.5rem;
+    right: 1.25rem;
     color: rgb(18, 36, 49);
     cursor: pointer;
 }
@@ -48,19 +49,20 @@
 
 .header-link.last {
     padding: 0 1rem;
-    font-weight: 300;  
-    color: #fb5a5a;
-    /* border: 2px solid rgba(18, 36, 49, 1); */
-    border: 2px solid #fb5a5a;
-    border-radius: 6px;      
+    /* font-weight: 300;   */
+    border: 2px solid rgba(18, 36, 49, 1);
+    border-radius: 4px;      
 }
 
 .header-link:hover {
-    /* color: rgba(18, 36, 49, .7); */
-    opacity: .7;
+    color: rgba(18, 36, 49, .7);
 }
 
 .header-link.last:hover {
-    opacity: .7;
-    /* border: 2px solid rgba(18, 36, 49, .7); */
+    border: 2px solid rgba(18, 36, 49, .7);
+}
+
+.header-link-wrapper-mobile .header-link.last {
+    padding: 0.5rem 0;
+    border: 0;
 }

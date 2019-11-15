@@ -1,6 +1,6 @@
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import scrollToElement from "scroll-to-element"
 import { FaBars } from 'react-icons/fa'
 
@@ -8,10 +8,6 @@ import "./header.css"
 import logoImg from "../images/logo.png"
 
 const handleAnchorLink = (hash) => {
-  if (typeof window !== 'undefined' && window.location.pathname !== '/') {
-    window.location.replace('/')
-  }
-
   scrollToElement(hash, {
     align: 'top',
     duration: 1000,
@@ -20,6 +16,13 @@ const handleAnchorLink = (hash) => {
 
 const Header = ({ siteTitle }) => {
   const [mobileMenuOn, toggleMobileMenu] = useState(false);
+  const [navigationOn, toggleNavigation] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+      toggleNavigation(false)
+    }
+  });
 
   const toggleMenu = () => {
     toggleMobileMenu(!mobileMenuOn)
@@ -36,80 +39,85 @@ const Header = ({ siteTitle }) => {
         width: `100%`,
         height: `60px`,
         background: `white`,
-        fontFamily: `-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`,
+        fontFamily: `'Poppins', sans-serif`,
         boxShadow: `0 -4px 7px #000`,
       }}
     >
       <div style={{ flexGrow: 1 }}>
-        <div
+        <Link
           // onClick={() => handleAnchorLink('/#welcome')}
-          onClick={() => window.location.replace('/')}
-          style={{ maxWidth: `214px`, cursor: `pointer`, marginLeft: `1rem` }}
+          // onClick={() => window.location.replace('/')}
+          to="/"
+          style={{ display: `block`, maxWidth: `214px`, cursor: `pointer`, marginLeft: `1rem` }}
         >
           <img
             src={logoImg}
             alt="Code Well Studio - Logo"
             style={{ marginBottom: `-7px` }}
           />
-        </div>
+        </Link>
       </div>
-      <div className="header-link-wrapper">
-        <span
-          className="header-link"
-          onClick={() => handleAnchorLink('#what-we-do')}
-        >
-          What we do
-        </span>
-        <span
-          className="header-link"
-          onClick={() => handleAnchorLink('#how-we-do-it')}
-        >
-          Why us?
-        </span>
-        <span
-          className="header-link"
-          onClick={() => handleAnchorLink('#our-work')}
-        >
-          Our work
-        </span>
-        <span
-          className="header-link last"
-          onClick={() => handleAnchorLink('#get-in-touch')}
-        >
-          Get in touch
-        </span>
-      </div>
-      <FaBars
-        className="header-link-wrapper-mobile-toggle"
-        onClick={() => toggleMenu()}
-      />
-      {mobileMenuOn && (
-        <div className="header-link-wrapper-mobile">
-          <span
-            className="header-link"
-            onClick={() => handleAnchorLink('#what-we-do')}
-          >
-            What we do
-          </span>
-          <span
-            className="header-link"
-            onClick={() => handleAnchorLink('#how-we-do-it')}
-          >
-            How we do it
-          </span>
-          <span
-            className="header-link"
-            onClick={() => handleAnchorLink('#our-work')}
-          >
-            Our work
-          </span>
-          <span
-            className="header-link last"
-            onClick={() => handleAnchorLink('#get-in-touch')}
-          >
-            Get in touch
-          </span>
-        </div>
+      {navigationOn && (
+        <React.Fragment>
+          <div className="header-link-wrapper">
+            <span
+              className="header-link"
+              onClick={() => handleAnchorLink('#what-we-do')}
+            >
+              What we do
+            </span>
+            <span
+              className="header-link"
+              onClick={() => handleAnchorLink('#how-we-do-it')}
+            >
+              Why us?
+            </span>
+            <span
+              className="header-link"
+              onClick={() => handleAnchorLink('#our-work')}
+            >
+              Our work
+            </span>
+            <span
+              className="header-link last"
+              onClick={() => handleAnchorLink('#get-in-touch')}
+            >
+              Get in touch
+            </span>
+          </div>
+          <FaBars
+            className="header-link-wrapper-mobile-toggle"
+            onClick={() => toggleMenu()}
+          />
+          {mobileMenuOn && (
+            <div className="header-link-wrapper-mobile">
+              <span
+                className="header-link"
+                onClick={() => handleAnchorLink('#what-we-do')}
+              >
+                What we do
+              </span>
+              <span
+                className="header-link"
+                onClick={() => handleAnchorLink('#how-we-do-it')}
+              >
+                How we do it
+              </span>
+              <span
+                className="header-link"
+                onClick={() => handleAnchorLink('#our-work')}
+              >
+                Our work
+              </span>
+              <span
+                className="header-link last"
+                onClick={() => handleAnchorLink('#get-in-touch')}
+              >
+                Get in touch
+              </span>
+            </div>
+          )}
+        </React.Fragment>
       )}
     </header>
   )

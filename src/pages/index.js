@@ -18,7 +18,7 @@ const IndexPage = () => (
       <Fade bottom cascade>
         <div>
           <h1>Building successful and profitable products is difficult. We make it simple.</h1>
-          <h3>Whether you're an early stage startup or an established company - we provide our clients technical and business expertise they need to succeed.</h3>
+          <h3 className="subtitle">Whether you're an early stage startup or an established company - we provide our clients technical and business expertise they need to succeed.</h3>
           <br />
           <div
             className="hero-button"
@@ -43,7 +43,7 @@ const IndexPage = () => (
             <h2>We cover a wide range of skills</h2>
             <h3 className="subsection-text">
               We are experts in <b>user experience development</b>, <b>performance optimization</b>, and <b>frontend architecture design</b>. 
-              Besides our speciality, we can also help you with user research, product development, development process optimization, and much more.
+              Besides our speciality, we can also help you with product development, development process optimization, and much more.
             </h3>
           </div>
         </div>
@@ -99,6 +99,14 @@ const IndexPage = () => (
               <img src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1533443221183-C2SG5EAG4D9ZMZLPAVIE/ke17ZwdGBToddI8pDm48kDIqxffH9PldCQsyJA_eaPMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcsWhdrL4uT7Qobf16lxKkOKArIhW12yMy75CYh6XOkxLmIuhF1ggn2ppT7KI4buve/movieo-hero.jpg?format=1500w" />
             </div>
           </div>
+          {/* <div className="subsection-center">
+            <div
+              className="hero-button load-more-projects"
+              // onClick={() => loadMoreProjects}
+            >
+              Load more
+            </div>
+          </div> */}
         </div>
       </Fade>
     </section>
