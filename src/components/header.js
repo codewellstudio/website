@@ -64,19 +64,19 @@ const Header = ({ siteTitle }) => {
               className="header-link"
               onClick={() => handleAnchorLink('#what-we-do')}
             >
-              What we do
+              What I do
             </span>
             <span
               className="header-link"
               onClick={() => handleAnchorLink('#how-we-do-it')}
             >
-              Why us?
+              Why me?
             </span>
             <span
               className="header-link"
               onClick={() => handleAnchorLink('#our-work')}
             >
-              Our work
+              My work
             </span>
             <span
               className="header-link last"

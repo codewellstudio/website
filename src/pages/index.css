@@ -132,6 +132,10 @@ section .project.ck-marketplace {
     background: -webkit-radial-gradient(center, ellipse cover, #3ddb94, #25ca7f 100%);
 }
 
+section .project.backoffice {
+    background: -webkit-radial-gradient(center, ellipse cover, #FE7F01, #F39901 100%);
+}
+
 section .project .project-description {
     padding-bottom: 1rem;
     text-align: center;
