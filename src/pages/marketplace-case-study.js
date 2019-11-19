@@ -37,6 +37,7 @@ const CreditKarmaCaseStudy = () => (
         By building a cross-vertical search experience, we increased the number of members in-market for a product. We had to run numerous product experiments, homepage placements etc.
       </p>
       <img
+        alt="CK Marketplace"
         align="middle"
         style={{ width: '50%', display: 'inline-block' }}
         src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1561386039702-ALLWPQBQW3QDA8HEG70W/ke17ZwdGBToddI8pDm48kIUjAMMHKfg61v0ypuYqCB5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwDvyONvR00ei0WKJJSDPomh1i4bqL9i9daWep_1Vrqe9LDYwooGyuNgRf5c7stUqs/Screen+Shot+2019-06-24+at+16.18.43.png?format=750w"

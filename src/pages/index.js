@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Code Well Studio" />
+      <SEO title="Web Development" />
       <section id="welcome">
         <Fade bottom cascade>
           <div>
@@ -34,12 +34,17 @@ const IndexPage = () => {
         </Fade>
       </section>
       <section id="about-me">
-        <a href="about-me" />
         <Fade bottom cascade>
           <div className="subsection-left">
             <h1>Hi!</h1>
             <div className="services">
-              <h3>My name is Sinisa. After my degree in IT, I began developing web applications for local businesses. In 2012, I started a Boutique Web Development shop with my two friends and I was happy to work long into the night learning more about what I loved. My years of dedication and experience coupled with my passion for technology and business allow me to truly enjoy the work that I do.</h3>
+              <h3 className="profile-left">My name is Sinisa. After my degree in IT, I began developing web applications for local businesses. In 2012, I started a Boutique Web Development shop with my two friends and I was happy to work long into the night learning more about what I loved. My years of dedication and experience coupled with my passion for technology and business allow me to truly enjoy the work that I do.</h3>
+              <img
+                align="top"
+                alt="Profile"
+                className="profile-right"
+                src="https://media.licdn.com/dms/image/C5603AQFWf2dHN8juSw/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=6OAMREuDd6ZxtOaIIq5taeTYc59E_-ZoM1vJlPp-tHk"
+              />
               <h3>Various experience throughout Berlin startups has brought me to one of the highly successfull companies in San Francisco where I strived as a software engineer.</h3>
               <h3>My personal preference for remote work has prevailed and had brough me back home mid 2019 where I quickly launched a small Web Consultancy business - <i>Code Well Studio</i> - and now looking forward to provide my extensive experience to you!</h3>
               <h3>
@@ -50,11 +55,10 @@ const IndexPage = () => {
         </Fade>
       </section>
       <section id="what-we-do">
-        <a href="what-we-do" />
         <Fade bottom cascade>
           <div className="subsection-left">
             <h1>What I do</h1>
-            <div className="services">
+            <div className="services bullet-list">
               <h3><FaRegCircle /> <b>Deliver measurable results</b> by showcasing working and improved product</h3>
               <h3><FaRegCircle /> Ensure <b>effective and transparent communication</b> that keeps everyone on the same page</h3>
               <h3><FaRegCircle /> Focus on <b>achieving your business goals</b> and bringing value</h3>
@@ -113,7 +117,7 @@ const IndexPage = () => {
                 <Link to="/marketplace-case-study">Case study</Link>
               </div>
               <div className="project-img-wrapper">
-                <img src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1561385196174-KXQBGXEFO0NIGT9521QV/ke17ZwdGBToddI8pDm48kAccOGYkcTR9GniJVKNNku57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0oycmklwMHPwSb2Cr-KYzbrvqEPTnkt7KVjE1iP6-PxADtzJKPXOWLVqbUqkmJOxBA/Screen%2BShot%2B2019-06-24%2Bat%2B16.03.35.jpg?format=2500w" />
+                <img alt="CK Case Study" src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1561385196174-KXQBGXEFO0NIGT9521QV/ke17ZwdGBToddI8pDm48kAccOGYkcTR9GniJVKNNku57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0oycmklwMHPwSb2Cr-KYzbrvqEPTnkt7KVjE1iP6-PxADtzJKPXOWLVqbUqkmJOxBA/Screen%2BShot%2B2019-06-24%2Bat%2B16.03.35.jpg?format=2500w" />
               </div>
             </div>
             <div className="project movieo">
@@ -125,7 +129,7 @@ const IndexPage = () => {
                 <Link to="/movieo-case-study">Case study</Link>
               </div>
               <div className="project-img-wrapper">
-                <img src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1533443221183-C2SG5EAG4D9ZMZLPAVIE/ke17ZwdGBToddI8pDm48kDIqxffH9PldCQsyJA_eaPMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcsWhdrL4uT7Qobf16lxKkOKArIhW12yMy75CYh6XOkxLmIuhF1ggn2ppT7KI4buve/movieo-hero.jpg?format=1500w" />
+                <img alt="Movieo Case Study" src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1533443221183-C2SG5EAG4D9ZMZLPAVIE/ke17ZwdGBToddI8pDm48kDIqxffH9PldCQsyJA_eaPMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcsWhdrL4uT7Qobf16lxKkOKArIhW12yMy75CYh6XOkxLmIuhF1ggn2ppT7KI4buve/movieo-hero.jpg?format=1500w" />
               </div>
             </div>
             {!moreLoaded && (
@@ -143,10 +147,7 @@ const IndexPage = () => {
                   <Link to="/solarisbank-case-study">Case study</Link>
                 </div>
                 <div className="project-img-wrapper">
-                  <img
-                    src={solarisbankProjectImg}
-                    alt="solarisBank - Case Study"
-                  />
+                  <img alt="solarisBank - Case Study" src={solarisbankProjectImg} />
                 </div>
               </div>
             )}
@@ -187,7 +188,8 @@ const IndexPage = () => {
       <section id="get-in-touch">
         <Fade bottom>
           <h1>Get in touch</h1>
-          <h2>Tell me more about your project and send me an email at <a href="mailto:sinisa@codewell.studio"><b className="accent">sinisa@codewell.studio</b></a></h2>
+          <h2>
+            Tell me more about your project and send me an email at <a style={{ textDecoration: `none` }} href="mailto:sinisa@codewell.studio"><b className="accent">sinisa@codewell.studio</b></a></h2>
         </Fade>
       </section>
       {/* <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} /> */}

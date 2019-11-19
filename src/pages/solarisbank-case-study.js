@@ -25,6 +25,7 @@ const SolarisBankCaseStudy = () => (
       <p>We were spearheading the product development, hiring and onboarding more front end engineers to help out with the challenge at hand.</p>
       <p>Main obstacle was building features and keeping up with the heavily resourced backend teams while starting a brand new product and its technical architecture.</p>
       <img
+        alt="solarisBank Backoffice"
         align="middle"
         style={{ width: '100%', display: 'inline-block' }}
         src="https://images.ctfassets.net/31h0albw7s12/79FTRFIZPyOooiyQ02UAIU/73e567b5e75859120a50bf00bd4364b1/17_039_SOLARIS__MaxThrelfallPhoto-3437.jpg?w=1020&h=536&fm=jpg&q=85&fit=thumb"

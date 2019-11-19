@@ -44,6 +44,16 @@ section h3 {
     width: 100%;
 }
 
+.services .profile-left {
+    width: 70%;
+}
+
+.services .profile-right {
+    position: absolute;
+    right: 1rem;
+    border-radius: 5rem;
+}
+
 section .subsection-text {
     font-family: 'Poppins', sans-serif;
 }
@@ -87,7 +97,6 @@ section .hero-button {
 
 section .hero-button:hover {
     background: #fb5a5acd;
-    /* background: rgb(18, 36, 49); */
 }
 
 section .subsection-center {
@@ -206,35 +215,6 @@ section .project p {
     color: rgba(255, 255, 255, 1);
 }
 
-/* @keyframes translate-up-down {
-    0%   {top: 0px;}
-    50%  {top: 150px;}
-    100% {top: 0px;}
-} */
-
-/* @keyframes letter-stretch {
-    0%   {letter-spacing: 1px;}
-    50%  {letter-spacing: 10px;}
-    100% {letter-spacing: 10px;}
-} */
-
-/* .parallax-element {
-    margin-top: 100px;
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    width: 100px;
-    height: 100px;
-    background: rgb(18, 36, 49);
-    position: relative;
-
-    transition: all 24s ease-in-out;
-    animation: translate-up-down 24s infinite;
-} */
-
-/* .animate-stretch {
-    transition: all 2s ease-in-out;
-    animation: letter-stretch 2s infinite;
-} */
-
 #testimonials h4,
 #testimonials h5 {
     display: inline-block;
@@ -250,7 +230,7 @@ section .project p {
     position: relative;
 }
 
-.testimonial .author {
+ .author {
     position: absolute;
     right: 0;
     top: 0;
@@ -258,12 +238,12 @@ section .project p {
     text-align: left;
 }
 
-.testimonial .author.author-left {
+ .author.author-left {
     right: auto;
     left: 0;
 }
 
-.testimonial .author img {
+ .author img {
     border-radius: 5rem;
 }
 
@@ -288,9 +268,22 @@ section .project p {
 
     section .subsection-left h1,
     section .subsection-right h1,
+    section .subsection-center h1,
     section .subsection-left h2,
     section .subsection-right h2 {
         display: inline-block;
+    }
+
+    .services .profile-left {
+        width: 100%;
+    }
+    
+    .services .profile-right {
+        display: none;
+    }
+
+    section .services.bullet-list {
+        text-align: left;
     }
 
     .why-us-questions {
@@ -304,5 +297,32 @@ section .project p {
 
     #get-in-touch h1 {
         display: inline-block;
+    }
+
+    .author {
+        display: none;
+    }
+}
+
+@media(max-width: 428px) {
+    section h1 {
+        font-size: 1.7rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    section h3 {
+        font-size: 1.3rem;
+    }
+    section h4 {
+        font-size: 1.1rem;
+    }
+
+    section h1,
+    section h2,
+    section h3,
+    section h4 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 }
