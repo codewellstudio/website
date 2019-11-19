@@ -8,7 +8,7 @@ font-family: 'Poppins', sans-serif;
 
 section {
     position: relative;
-    padding: 160px 0;
+    padding: 140px 0;
     min-height: 100vh;
     height: 100%;
     text-align: center;
@@ -133,7 +133,7 @@ section .project.ck-marketplace {
 }
 
 section .project.backoffice {
-    background: -webkit-radial-gradient(center, ellipse cover, #FE7F01, #F39901 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #FE7F01, rgb(243, 153, 1) 100%);
 }
 
 section .project .project-description {
@@ -160,20 +160,21 @@ section .project a {
     border-radius: 3px;
 }
 
-section .project.project.ck-marketplace a {
-    /* background: rgba(61, 219, 148, 0.7); */
+section .project.ck-marketplace a {
     border: 1px solid rgba(61, 219, 148, 0.7);
     color: rgb(18, 36, 49);
 }
+
 
 section .project a:hover {
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-section .project.project.ck-marketplace a:hover {
+section .project.ck-marketplace a:hover {
     border: 1px solid rgba(61, 219, 148, 1);
 }
+
 
 section .project-img-wrapper {
     text-align: center;
@@ -263,4 +264,15 @@ section .project p {
     #get-in-touch h1 {
         display: inline-block;
     }
+}
+
+#testimonials h4,
+#testimonials h5 {
+    display: inline-block;
+    width: 75%;
+    font-weight: 400;
+}
+
+.testimonial {
+
 }

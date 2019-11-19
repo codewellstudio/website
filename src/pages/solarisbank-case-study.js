@@ -16,32 +16,29 @@ const SolarisBankCaseStudy = () => (
         solarisBank Backoffice
         <a className="link-external-website" target="blank" href="https://www.solarisbank.com/">Visit website <FaChevronRight /></a>
       </h1>
-      <p>Credit Karma is an American multinational <b>personal finance company with over 88 million members, with valuation over 4 billion</b>. It offers free credit score reports, credit cards, personal loans shopping, tax filing and other financial products.</p>
+      <p><b>solarisBank enables other businesses to offer fully digital and fully compliant financial services to their end-customer.</b> solarisBank is a pioneer in offering banking as a service, which meant they had tremendous challenges on technical side.</p>
       <h2>Marketplace team which was supposed to bring those products together and offer personalized shopping experience for our members. </h2>
-      <p><b>What was the problem we were trying to solve?</b></p>
-      <p>Most Credit Karma members don’t think of it as a place to shop for financial products.  And today, we know most people looking for financial products begin their search on google. For the same reason you search for books on Amazon and flights on Kayak, Credit Karma can become the place to search for financial products to get personalized results. Given that Credit Karma provided the most approval certainty of any online platform, we had the opportunity to provide trusted marketplace for our members at a critical moment in their financial lives.</p>
-      <p><b>How did we solve it?</b></p>
-      <p>Hypotheses was:</p>
-      <ul>
-        <li>Search may be an effective way to direct members with higher “purchase” intent to products they’re looking for</li>
-        <li>Search can be a mechanism to help members discover the broad range of products we offer</li>
-        <li>Search can help convey that we offer personalized results, which is unique to Credit Karma</li>
-      </ul>
-      <p>But there were risks too:</p>
-      <ul>
-        <li>Members don’t think to search for financial products on Credit Karma and so they don’t use search functionality</li>
-        <li>Members search for things but we can’t monetize it</li>
-        <li>Search can help convey that we offer personalized results, which is unique to Credit Karma</li>
-      </ul>
-      <p style={{ width: '50%', padding: '0 5%', display: 'inline-block', textAlign: 'center' }}>
-        By building a cross-vertical search experience, we increased the number of members in-market for a product. We had to run numerous product experiments, homepage placements etc.
+      <p>
+        Their vision was spanning into having the real-time interface providing our operations team transparency and supervision into our business. But soon after we saw the <b>opportunity to change the perception of banking software</b>.
+        We were working directly under the CTO and quickly developed a roadmap which included a daunting task of externalizing our interface as a <b>white-label product!</b>
       </p>
+      <p>We were spearheading the product development, hiring and onboarding more front end engineers to help out with the challenge at hand.</p>
+      <p>Main obstacle was building features and keeping up with the heavily resourced backend teams while starting a brand new product and its technical architecture.</p>
       <img
         align="middle"
-        style={{ width: '50%', display: 'inline-block' }}
-        src="https://images.squarespace-cdn.com/content/v1/5b5b57a1f8370a099b9bba36/1561386039702-ALLWPQBQW3QDA8HEG70W/ke17ZwdGBToddI8pDm48kIUjAMMHKfg61v0ypuYqCB5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwDvyONvR00ei0WKJJSDPomh1i4bqL9i9daWep_1Vrqe9LDYwooGyuNgRf5c7stUqs/Screen+Shot+2019-06-24+at+16.18.43.png?format=750w"
+        style={{ width: '100%', display: 'inline-block' }}
+        src="https://images.ctfassets.net/31h0albw7s12/79FTRFIZPyOooiyQ02UAIU/73e567b5e75859120a50bf00bd4364b1/17_039_SOLARIS__MaxThrelfallPhoto-3437.jpg?w=1020&h=536&fm=jpg&q=85&fit=thumb"
       />
-      <h2>Marketplace ended up as a successful experiment where <b>all our engineering effort was done with quality and in time</b>, regardless of the team being quickly put together and due to difficult nature of the product!</h2>
+      
+      <p>To overcome these issues, our team had to become a <b>Swiss Army knife</b> of solarisBank. We developed our very own framework for adding entire CRUD endpoints in a matters of hours, fully tested and production ready, as opposed to couple of days. That framework also enabled new engineers to get up to speed in a matter of weeks, rather than months.</p>
+      <ul>
+        <li><b>Features that used to take up to three days to develop could now be done within three to four hours.</b></li>
+        <li><b>New engineers that needed 6-8 weeks to get up to speed, now need less than 2 weeks.</b></li>
+      </ul>
+      <p>For a company that was growing rapidly, and strained with resources, our technical solution quickly turned into a very monetizable product. It proved that you don’t always need a lot of engineers, but a few well thought out ideas, and skills to implement them.</p>
+      <h2>Since our tools was also used in promotional and demo purposes, <b>solarisBank's customer base have grown 10x and acquisition speed increased significantly!</b></h2>
+      <p>When the project was finished, we had more than that to showcase. Overall team happiness was skyrocketing, development, performance and customer acquisition speed increased drastically. </p>
+      <p>After one year, we checked back to see how the product is doing, and found out that the <b>code and architecture developed is being used as a core component in scaling new products,</b> and the <b>front end team is still the most efficient team!</b></p>
     </div>
   </Layout>
 )
