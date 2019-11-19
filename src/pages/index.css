@@ -206,19 +206,19 @@ section .project p {
     color: rgba(255, 255, 255, 1);
 }
 
-@keyframes translate-up-down {
+/* @keyframes translate-up-down {
     0%   {top: 0px;}
     50%  {top: 150px;}
     100% {top: 0px;}
-}
+} */
 
-@keyframes letter-stretch {
+/* @keyframes letter-stretch {
     0%   {letter-spacing: 1px;}
     50%  {letter-spacing: 10px;}
     100% {letter-spacing: 10px;}
-}
+} */
 
-.parallax-element {
+/* .parallax-element {
     margin-top: 100px;
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     width: 100px;
@@ -228,12 +228,12 @@ section .project p {
 
     transition: all 24s ease-in-out;
     animation: translate-up-down 24s infinite;
-}
+} */
 
-.animate-stretch {
+/* .animate-stretch {
     transition: all 2s ease-in-out;
     animation: letter-stretch 2s infinite;
-}
+} */
 
 #testimonials h4,
 #testimonials h5 {
