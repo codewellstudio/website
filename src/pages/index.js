@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Web development" />
+      <SEO title="Code Well Studio" />
       <section id="welcome">
         <Fade bottom cascade>
           <div>
