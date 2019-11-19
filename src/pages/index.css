@@ -40,17 +40,26 @@ section h3 {
     color: rgb(18, 36, 49);
 }
 
+.services h3 {
+    width: 100%;
+}
+
 section .subsection-text {
     font-family: 'Poppins', sans-serif;
 }
 
+section .why-us-questions {
+    margin-top: 4rem;
+}
+
 section .why-us-questions h2,
 section .why-us-questions h3 {
-    line-height: 1.2;
+    line-height: 1.4;
     font-family: 'Poppins', sans-serif;
 }
 
-section .why-us-questions svg {
+section .why-us-questions svg,
+section .services svg {
     margin-right: 0.75rem;
     font-size: 1.25rem;
     position: relative;
@@ -273,6 +282,6 @@ section .project p {
     font-weight: 400;
 }
 
-.testimonial {
-
+.accent {
+    color: #fb5a5a;
 }

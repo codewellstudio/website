@@ -21,14 +21,30 @@ const IndexPage = () => {
       <section id="welcome">
         <Fade bottom cascade>
           <div>
-            <h1>Building successful and profitable products is difficult. We make it simple.</h1>
-            <h3 className="subtitle">Whether you're an early stage startup or an established company - We provide our clients with technical and business expertise they need to succeed.</h3>
+            <h1>Building successful and profitable products is difficult. I make it simple.</h1>
+            <h3 className="subtitle">Whether you're an early stage startup or an established company - I provide my clients with technical and business expertise they need to succeed.</h3>
             <br />
             <div
               className="hero-button"
               onClick={() => scrollToElement('#our-work', { align: 'top', duration: 1000 })}
             >
-              See our work
+              See my work
+            </div>
+          </div>
+        </Fade>
+      </section>
+      <section id="about-me">
+        <a href="about-me" />
+        <Fade bottom cascade>
+          <div className="subsection-left">
+            <h1>Hi!</h1>
+            <div className="services">
+              <h3>My name is Sinisa. After my degree in IT, I began developing web applications for local businesses. In 2012, I started a Boutique Web Development shop with my two friends and I was happy to work long into the night learning more about what I loved. My years of dedication and experience coupled with my passion for technology and business allow me to truly enjoy the work that I do.</h3>
+              <h3>Various experience throughout Berlin startups has brought me to one of the highly successfull companies in San Francisco where I strived as a software engineer.</h3>
+              <h3>My personal preference for remote work has prevailed and had brough me back home mid 2019 where I quickly launched a small Web Consultancy business - <i>Code Well Studio</i> - and now looking forward to provide my extensive experience to you!</h3>
+              <h3>
+                You can learn more about me and my work through my <a href="http://smikulic.me/" target="blank">Online CV</a>, <a href="https://github.com/smikulic" target="blank">Github portfolio</a>, <a href="https://medium.com/@sinisa.mikulic" target="blank">Medium articles</a> or just check out my <a href="javascript:void(0);" onClick={(e) => scrollToElement('#our-work', { align: 'top', duration: 1000 })}>Case Studies</a> directly.
+              </h3>
             </div>
           </div>
         </Fade>
@@ -37,42 +53,48 @@ const IndexPage = () => {
         <a href="what-we-do" />
         <Fade bottom cascade>
           <div className="subsection-left">
-            <h1>What we do</h1>
+            <h1>What I do</h1>
             <div className="services">
-              <h3>› <b>Deliver measurable results</b> by showcasing working and improved product</h3>
-              <h3>› Ensure <b>effective and transparent communication</b> that keeps everyone on the same page</h3>
-              <h3>› Focus on <b>achieving client’s business goals</b> and bringing value</h3>
+              <h3><FaRegCircle /> <b>Deliver measurable results</b> by showcasing working and improved product</h3>
+              <h3><FaRegCircle /> Ensure <b>effective and transparent communication</b> that keeps everyone on the same page</h3>
+              <h3><FaRegCircle /> Focus on <b>achieving client’s business goals</b> and bringing value</h3>
             </div>
-            <div className="subsection-right top-spacing">
+            <div className="subsection-center top-spacing">
+              <h2 className="subsection-text">
+                I am an expert in <b className="accent">UI & UX development</b>, <b className="accent">performance optimization</b>, <b className="accent">frontend architecture and infrastructure</b>. 
+              </h2>
               <h3 className="subsection-text">
-                We are experts in <b>UI & UX development</b>, <b>performance optimization</b>, <b>frontend architecture and infrastructure</b>. 
+                Besides my core skills, I can help you with backend API, product management and agile process optimization.
               </h3>
-              <h3 className="subsection-text">
-                Besides our core skills, we can help you with backend API, product management and agile process optimization.
-              </h3>
+            </div>
+            <div className="subsection-center top-spacing">
+              <h3>Technologies used: </h3>
+              <h4 className="subsection-text" style={{ width: `100%` }}>
+                <u><i>JavaScript, React, Redux, Mobx, Node, TypeScript, GraphQL, Webpack, Docker, Ruby on Rails</i></u>
+              </h4>
             </div>
           </div>
         </Fade>
       </section>
       <section id="how-we-do-it">
         <Fade bottom cascade>
-          <div className="subsection-right">
-            <h1>Why us?</h1>
-            <h3>
+          <div className="subsection-center">
+            <h1>Why me?</h1>
+            <h3 style={{ width: `100%` }}>
               Most projects end up with similar problems. 
               Application <b>performance</b>, development <b>process</b>, product <b>delivery speed</b> and customer <b>happiness</b>. 
             </h3>
-            <h3>
-              Our technical solution always provides the best balance of those key ingredients and <b>maximizes your chance of success</b>.
+            <h3 style={{ width: `100%` }}>
+              My technical solution always provides the best balance of those key ingredients and <b className="accent">maximizes your chance of success</b>.
             </h3>
             <div className="subsection-left top-spacing">
               <div className="why-us-questions">
-                <h2>If you recognize yourself in some of these questions, <a href="#get-in-touch">contact us</a>.</h2>
                 <h3><FaRegCircle />Need your C-Level technology lead?
                 <br /><FaRegCircle />Need a technology review or overhaul?
                 <br /><FaRegCircle />Need workflow and process optimization?
                 <br /><FaRegCircle />Need a strategy to move forward?
                 </h3>
+                <h2>If you recognize yourself in some of these questions, <a href="#get-in-touch">get in touch</a>.</h2>
               </div>
             </div>
           </div>
@@ -81,7 +103,7 @@ const IndexPage = () => {
       <section id="our-work">
         <Fade bottom cascade>
           <div className="subsection-left">
-            <h1>Our work</h1>
+            <h1>My work</h1>
             <div className="project ck-marketplace">
               <div className="project-description">
                 <h3>Credit Karma - Marketplace</h3>
@@ -98,7 +120,7 @@ const IndexPage = () => {
               <div className="project-description">
                 <h3>Movieo</h3>
                 <p>
-                  We love movies, but finding great ones to watch is usually a hassle. We had been searching for a simple and well-designed movie-browsing interface, yet we couldn't find one. Therefore, we decided to create one ourselves.
+                  My friends and I love movies, but finding great ones to watch is usually a hassle. We had been searching for a simple and well-designed movie-browsing interface, yet we couldn't find one. Therefore, we decided to create one ourselves.
                 </p>
                 <Link to="/movieo-case-study">Case study</Link>
               </div>
@@ -131,33 +153,33 @@ const IndexPage = () => {
           </div>
         </Fade>
       </section>
-      {/* <section id="testimonials">
+      <section id="testimonials">
         <Fade bottom cascade>
           <div className="subsection-left">
             <h1>Testimonials</h1>
             <div className="testimonial">
-              <h4>
+              <h3>
                 “I worked with Siniša in the beginning of my career and have followed his growth as a professional ever since. He’s a great, reliable developer who isn’t afraid to step out of his role when necessary. He pushed himself relentlessly to improve his skills on a daily basis.
-              </h4>
-              <h4>After a couple of successful projects he moved to Berlin and then finally to Bay Area.</h4>
-              <h4>Siniša is down to earth hardworking professional and the person because of whom I started coding in the first place.</h4>
-              <h4>Can’t recommend him enough!”</h4>
+              </h3>
+              <h3>After a couple of successful projects he moved to Berlin and then finally to Bay Area.</h3>
+              <h3>Siniša is down to earth hardworking professional and the person because of whom I started coding in the first place.</h3>
+              <h3>Can’t recommend him enough!”</h3>
               <h5>— IVOR REIC, OWNER AT CODETREE.CO</h5>
             </div>
           </div>
           <div className="subsection-right top-spacing">
-            <h4>
+            <h3>
             “Sinisa possesses extensive and varied specialist knowledge, which he always deployed confidently and skillfully in practice. He demonstrated high personal initiative and identified fully with our company, impressing us in the process as well with his great enthusiasm.
-            </h4>
-            <h4>Even in situations where his workload was extreme, he demonstrated the greatest resilience and found exceptional solutions for any problems that arose.”</h4>
+            </h3>
+            <h3>Even in situations where his workload was extreme, he demonstrated the greatest resilience and found exceptional solutions for any problems that arose.”</h3>
             <h5>— INGMAR KRUSCH, VP ENGINEERING, SOLARISBANK</h5>
           </div>
         </Fade>
-      </section> */}
+      </section>
       <section id="get-in-touch">
         <Fade bottom>
           <h1>Get in touch</h1>
-          <h3>Tell us more about your project and send us an email at <b>sinisa@codewell.studio</b></h3>
+          <h2>Tell me more about your project and send me an email at <b className="accent">sinisa@codewell.studio</b></h2>
         </Fade>
       </section>
       {/* <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} /> */}
