@@ -57,7 +57,7 @@ const IndexPage = () => {
             <div className="services">
               <h3><FaRegCircle /> <b>Deliver measurable results</b> by showcasing working and improved product</h3>
               <h3><FaRegCircle /> Ensure <b>effective and transparent communication</b> that keeps everyone on the same page</h3>
-              <h3><FaRegCircle /> Focus on <b>achieving client’s business goals</b> and bringing value</h3>
+              <h3><FaRegCircle /> Focus on <b>achieving your business goals</b> and bringing value</h3>
             </div>
             <div className="subsection-center top-spacing">
               <h2 className="subsection-text">
@@ -68,10 +68,10 @@ const IndexPage = () => {
               </h3>
             </div>
             <div className="subsection-center top-spacing">
-              <h3>Technologies used: </h3>
-              <h4 className="subsection-text" style={{ width: `100%` }}>
-                <u><i>JavaScript, React, Redux, Mobx, Node, TypeScript, GraphQL, Webpack, Docker, Ruby on Rails</i></u>
-              </h4>
+              <h3>Technologies I use: </h3>
+              <h3 className="subsection-text" style={{ width: `100%`, fontWeight: `300` }}>
+                <u><i>JavaScript, React, Redux, Mobx, Node, TypeScript, GraphQL, Webpack, Docker, Ruby on Rails & more</i></u>
+              </h3>
             </div>
           </div>
         </Fade>
@@ -164,22 +164,30 @@ const IndexPage = () => {
               <h3>After a couple of successful projects he moved to Berlin and then finally to Bay Area.</h3>
               <h3>Siniša is down to earth hardworking professional and the person because of whom I started coding in the first place.</h3>
               <h3>Can’t recommend him enough!”</h3>
-              <h5>— IVOR REIC, OWNER AT CODETREE.CO</h5>
+              <span className="author">
+                <img src="https://media.licdn.com/dms/image/C5603AQGTGTjJWtJX1A/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=vtqi4XxUpm1SPTS5WZIk3gYk0WFKoZxqfKGGkCILnek" />
+                <h5>— IVOR REIC, OWNER AT CODETREE.CO</h5>
+              </span>
             </div>
           </div>
           <div className="subsection-right top-spacing">
-            <h3>
-            “Sinisa possesses extensive and varied specialist knowledge, which he always deployed confidently and skillfully in practice. He demonstrated high personal initiative and identified fully with our company, impressing us in the process as well with his great enthusiasm.
-            </h3>
-            <h3>Even in situations where his workload was extreme, he demonstrated the greatest resilience and found exceptional solutions for any problems that arose.”</h3>
-            <h5>— INGMAR KRUSCH, VP ENGINEERING, SOLARISBANK</h5>
+            <div className="testimonial">
+              <h3>
+              “Sinisa possesses extensive and varied specialist knowledge, which he always deployed confidently and skillfully in practice. He demonstrated high personal initiative and identified fully with our company, impressing us in the process as well with his great enthusiasm.
+              </h3>
+              <h3>Even in situations where his workload was extreme, he demonstrated the greatest resilience and found exceptional solutions for any problems that arose.”</h3>
+              <span className="author author-left">
+                <img src="https://media.licdn.com/dms/image/C4D03AQGMSpvbNlYb4w/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=Y5d6ZPHORleUsYmpbHt0Hl15PCQtriHgIBggbqSuBLk" />
+                <h5>— INGMAR KRUSCH, VP ENGINEERING, SOLARISBANK</h5>
+              </span>
+            </div>
           </div>
         </Fade>
       </section>
       <section id="get-in-touch">
         <Fade bottom>
           <h1>Get in touch</h1>
-          <h2>Tell me more about your project and send me an email at <b className="accent">sinisa@codewell.studio</b></h2>
+          <h2>Tell me more about your project and send me an email at <a href="mailto:sinisa@codewell.studio"><b className="accent">sinisa@codewell.studio</b></a></h2>
         </Fade>
       </section>
       {/* <ArrowIconFixed anchors={['#welcome', '#what-we-do', '#how-we-do-it', '#our-work', '#get-in-touch']} /> */}

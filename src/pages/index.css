@@ -235,6 +235,38 @@ section .project p {
     animation: letter-stretch 2s infinite;
 }
 
+#testimonials h4,
+#testimonials h5 {
+    display: inline-block;
+    width: 75%;
+    font-weight: 400;
+}
+
+.accent {
+    color: #fb5a5a;
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial .author {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8rem;
+    text-align: left;
+}
+
+.testimonial .author.author-left {
+    right: auto;
+    left: 0;
+}
+
+.testimonial .author img {
+    border-radius: 5rem;
+}
+
 @media(max-width: 768px) {
     section {
         padding: 100px 0;
@@ -273,15 +305,4 @@ section .project p {
     #get-in-touch h1 {
         display: inline-block;
     }
-}
-
-#testimonials h4,
-#testimonials h5 {
-    display: inline-block;
-    width: 75%;
-    font-weight: 400;
-}
-
-.accent {
-    color: #fb5a5a;
 }
