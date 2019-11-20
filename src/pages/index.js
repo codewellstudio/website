@@ -19,7 +19,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Web Development" />
       <section id="welcome">
-        <Fade bottom cascade>
+        {/* <Fade bottom cascade> */}
           <div>
             <h1>Building successful and profitable products is difficult. I make it simple.</h1>
             <h3 className="subtitle">Whether you're an early stage startup or an established company - I provide my clients with technical and business expertise they need to succeed.</h3>
@@ -31,7 +31,7 @@ const IndexPage = () => {
               See my work
             </div>
           </div>
-        </Fade>
+        {/* </Fade> */}
       </section>
       <section id="about-me">
         <Fade bottom cascade>
