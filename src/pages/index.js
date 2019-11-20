@@ -165,6 +165,7 @@ const IndexPage = () => {
               <h3>After a couple of successful projects he moved to Berlin and then finally to Bay Area.</h3>
               <h3>Siniša is down to earth hardworking professional and the person because of whom I started coding in the first place.</h3>
               <h3>Can’t recommend him enough!”</h3>
+              <h5 className="hide-desktop">— IVOR REIC, OWNER AT CODETREE.CO</h5>
               <span className="author">
                 <img src="https://media.licdn.com/dms/image/C5603AQGTGTjJWtJX1A/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=vtqi4XxUpm1SPTS5WZIk3gYk0WFKoZxqfKGGkCILnek" />
                 <h5>— IVOR REIC, OWNER AT CODETREE.CO</h5>
@@ -177,6 +178,7 @@ const IndexPage = () => {
               “Sinisa possesses extensive and varied specialist knowledge, which he always deployed confidently and skillfully in practice. He demonstrated high personal initiative and identified fully with our company, impressing us in the process as well with his great enthusiasm.
               </h3>
               <h3>Even in situations where his workload was extreme, he demonstrated the greatest resilience and found exceptional solutions for any problems that arose.”</h3>
+              <h5 className="hide-desktop">— INGMAR KRUSCH, VP ENGINEERING, SOLARISBANK</h5>
               <span className="author author-left">
                 <img src="https://media.licdn.com/dms/image/C4D03AQGMSpvbNlYb4w/profile-displayphoto-shrink_200_200/0?e=1579737600&v=beta&t=Y5d6ZPHORleUsYmpbHt0Hl15PCQtriHgIBggbqSuBLk" />
                 <h5>— INGMAR KRUSCH, VP ENGINEERING, SOLARISBANK</h5>

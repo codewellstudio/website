@@ -93,7 +93,7 @@ const Header = ({ siteTitle }) => {
           // onClick={() => handleAnchorLink('/#welcome')}
           // onClick={() => window.location.replace('/')}
           to="/"
-          style={{ display: `block`, maxWidth: `214px`, cursor: `pointer`, marginLeft: `1rem` }}
+          style={{ display: `block`, maxWidth: `214px`, cursor: `pointer`, marginLeft: `0.75rem` }}
         >
           <img
             src={logoImg}

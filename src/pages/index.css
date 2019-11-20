@@ -247,6 +247,10 @@ section .project p {
     border-radius: 5rem;
 }
 
+.hide-desktop {
+    display: none !important;
+}
+
 @media(max-width: 768px) {
     section {
         padding: 100px 0;
@@ -301,6 +305,10 @@ section .project p {
 
     .author {
         display: none;
+    }
+
+    .hide-desktop {
+        display: inline-block !important;
     }
 }
 
