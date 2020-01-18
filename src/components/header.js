@@ -29,7 +29,7 @@ const NavigationLinks = ({ handleAnchorLink }) => (
     </span>
     <span
       className="header-link"
-      onClick={() => handleAnchorLink('#our-work')}
+      onClick={() => handleAnchorLink('#my-work')}
     >
       My work
     </span>
