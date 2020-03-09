@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{RXBc:function(n,e,o){"use strict";o.r(e);o("pIFo");var t=o("q1tI"),c=o.n(t);e.default=function(){return"undefined"!=typeof window&&window.location.replace("https://smikulic.com"),c.a.createElement("span",null)}}}]);
+//# sourceMappingURL=component---src-pages-index-js-d2d8a14614bc6f01fd61.js.map
