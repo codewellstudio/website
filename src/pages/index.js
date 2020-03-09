@@ -11,7 +11,7 @@ import solarisbankProjectImg from "../images/sb_services.png"
 import "./index.css"
 
 const IndexPage = () => {
-  if (window) {
+  if (typeof window !== 'undefined') {
     window.location.replace("https://smikulic.com");
   }
   const [moreLoaded, setMoreLoaded] = useState(false)
